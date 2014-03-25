@@ -1,0 +1,11 @@
+<p> <%= @cuisine.name %></p>
+<p> <%= @cuisine.description %></p>
+
+<p><%= link_to 'Edit', edit_cuisine_path(@cuisine) %> <%= link_to 'Delete', @cuisine, :method => :delete %></p>
+
+
+ <div class="edit_delete_cuisine">
+<%= link_to 'Edit Cuisine', edit_cuisine_path(@cuisine) %>
+|
+<%= link_to 'Delete Cuisine', @cuisine, :method => :delete %>
+</div>

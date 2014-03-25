@@ -1,0 +1,17 @@
+
+<p><%= link_to 'Edit', edit_user_path(@user) %> <%= link_to 'Delete', @user, :method => :delete %></p>
+<p> <%= @user.name %></p>
+<p> <%= @user.address_1 %></p>
+<p> <%= @user.address_2 %></p>
+<p> <%= @user.city %></p>
+<p> <%= @user.postcode %></p>
+<p> <%= @user.country %></p>
+<p> <%= @user.email %></p>
+
+<p><%= image_tag @user.image, :class => 'user' %></p>
+
+ <div class="edit_delete_user">
+<%= link_to 'Edit User', edit_user_path(@user) %>
+|
+<%= link_to 'Delete User', @user, :method => :delete %>
+</div>

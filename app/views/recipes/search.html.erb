@@ -1,0 +1,51 @@
+<%= form_tag('/search', :method => 'get') %>
+
+	<%= label_tag :search %>
+	<%= text_field_tag :search %>
+
+  <%= submit_tag %>
+
+
+  <% if @search_result %>
+
+ <% @search_result['matches'].each do |match| %>
+
+  <h2><%= match['recipeName'] %></h2>
+
+  <p>Ingredients:<% match['ingredients'].each do |ingredient| %></p>
+  <p><%= ingredient %></p>
+  
+  <% end %>
+
+    
+    <p>Source display name:<%= match['sourceDisplayName']%></p> 
+    <p>Rating:<%= match['rating']%></p> 
+    <p>Total cooktime (seconds):<%= match['totalTimeInSeconds']%></p>
+    <p>Recipe ID:<%= match['id']%></p> 
+    <p>Source:<%= match['source']%></p> 
+    
+  
+    <img src="<%= match['smallImageUrls'] %>" />
+
+<% end %>
+
+
+<div class="recipe">
+  <div class="image">
+  </div>
+  <div class="details">
+
+    <ul>
+     
+      <li><b>Cuisine:</b> <%= @search_result['matches'][1]['attributes']['cuisine'] %></li>
+      <li><b>Ingredients:</b> <%= @search_result['matches'][1]['ingredients'] %></li>
+      
+    </ul>
+  
+  </div>
+</div> 
+
+<footer><b>Attribution:</b> <%== @search_result['attribution'] %></footer
+
+<% end %>
+ 

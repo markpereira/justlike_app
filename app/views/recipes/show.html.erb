@@ -1,0 +1,17 @@
+<p><%= @recipe.name %></p>
+<p><%= link_to('Edit', edit_recipe_path(@recipe)) %> <%= link_to('Delete', @recipe, :method => :delete) %></p>
+<p>Description: <%= @recipe.description %></p>
+<p>Serves: <%= @recipe.servingsize %></p>
+<p><%= @recipe.instruction %></p>
+<p><%= image_tag @recipe.image, :class => 'recipe' %></p>
+
+<% @recipe.ingredients.each do |ingredient| %>
+  <p><%= ingredient.name %></p>
+  <p><%= image_tag ingredient.image, :class => 'ingredient' %></p>
+<% end %>
+
+ <div class="edit_delete_recipe">
+<%= link_to 'Edit Recipe', edit_recipe_path(@recipe) %>
+|
+<%= link_to 'Delete Recipe', @recipe, :method => :delete %>
+</div>
