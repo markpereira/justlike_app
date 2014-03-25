@@ -39,6 +39,7 @@ gem 'bootstrap-sass'
 gem 'bcrypt-ruby'
 gem 'protected_attributes'
 gem 'rails_12factor'
+gem 'rails_serve_static_assets'
 
 #additional debugging gems
 group :development do
