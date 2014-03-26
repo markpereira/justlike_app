@@ -1,15 +1,14 @@
+<h1 id='headerH1'>Recipes Index</h1>
+
+<div id="recipes_index"
 <ol>
 	<% @recipes.each do |recipe| %>
 	<li>
+			<li id='recipe_image'><%= image_tag(recipe.image) %></li>
 		<ul>
-			<li><%= link_to(recipe.name, recipe) %></li>
-			<li><%= recipe.description %></li>
-			<li><%= recipe.cooktime %></li>
-			<li><%= recipe.servingsize %></li>
-			<li><%= recipe.instruction %></li>
-			<li><%= image_tag(recipe.image) %></li>
-			<li></li>
+			<li></strong>Recipe Name : </strong><%= link_to(recipe.name, recipe) %></li>
 		</ul>
 	</li>
 	<% end %>
 </ol>
+</div>

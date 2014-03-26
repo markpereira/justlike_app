@@ -30,10 +30,7 @@ class RecipesController < ApplicationController
     recipe = Recipe.find params[:id]
     recipe.destroy
     redirect_to recipes_path
-  end
-
-  def trending
-  end  
+  end 
 
   def search
     @status = "no search"
@@ -51,6 +48,7 @@ class RecipesController < ApplicationController
       else
       @status = "found results" 
       #binding.pry
+
       end
     end 
   end 

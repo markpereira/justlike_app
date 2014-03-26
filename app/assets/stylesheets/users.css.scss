@@ -1,3 +1,33 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+div#user_main {
+	max-width: 960px ;
+	margin:auto ;
+	text-align:center ;
+	background-color :#B5A3A3 ;
+	border-radius: 15px ;
+}
+
+
+div#user_main p img.user {
+	width: 300px;
+	height: 300px;
+	border-radius: 100%;
+	box-shadow: 5px 5px 10px black;
+	margin-top: 15px ;
+}
+
+div#user_main p {
+	min-width: 200px ;
+}
+
+div.edit_delete_user {
+	max-width: 960px ;
+	margin:auto ;
+	text-align:center ;
+}
+
+form#edit_user * {
+	display: table-caption;
+}

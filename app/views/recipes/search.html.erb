@@ -1,8 +1,7 @@
   <h1 id='headerH1'>Search Recipes</h1>
   <div id="search">
     <%= form_tag('/search', :method => 'get') %>
-	   <%= label_tag :search %>
-	   <%= text_field_tag :search %> 
+	  <%= text_field_tag :search %> 
 
     <form method="get" action="/search">
       <button type="search" class="btn btn-default" id="search_button">Search Recipe Database </button>  
@@ -15,24 +14,19 @@
   <div id='main'>
     <% if @search_result %>
     <% @search_result['matches'].each do |match| %>
-
+      <img src="<%= match['smallImageUrls'].first %>" />
       <h2 id='H2search_title'><%= match['recipeName'] %></h2>
-        <img src="<%= match['smallImageUrls'].first %>" />
-
-        <p><strong>Ingredients: </strong><% match['ingredients'].each do |ingredient| %></p>
-        <p><%= ingredient %></p>
-      <% end %>
-   
-        <p><strong>Source display name: </strong><%= match['sourceDisplayName']%></p> 
-        <p><strong>Rating: </strong><%= match['rating']%></p> 
-        <p><strong>Total cooktime (seconds): </strong><%= match['totalTimeInSeconds']%></p>
-        <p><strong>Recipe ID: </strong><%= match['id']%></p> 
-
+        
           <form method="get" action="/dashboard">
-            <button type="submit" class="btn btn-default" id="intro_button">Add to My recipes</button>
+            <button type="submit" class="btn btn-default" id="search_button">Add to My recipes</button>
+          </form>
+          <form method="get" action="/dashboard">
+            <button type="submit" class="btn btn-default" id="search_button">View full recipe</button>
           </form>
         <hr>
     <% end %>
-    <% end %>
 
 </div> 
+<footer id="footer_search">Attributions:<%== @search_result['attribution']['html']%></footer>
+
+    <% end %>
