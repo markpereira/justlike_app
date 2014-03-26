@@ -29,8 +29,11 @@
       </ul>
       
       <ul class="nav navbar-nav navbar-right">
+      <% if @current_user.present? %>
+        <li><%= link_to 'Logout ' + @current_user.name, login_path, :method => :delete %>
+        <% else %>
         <li><a href="/login">Login</a></li>
-        <li class="dropdown"></li>
+        <% end %>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

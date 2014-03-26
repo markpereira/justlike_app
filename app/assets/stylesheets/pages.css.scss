@@ -1,3 +1,126 @@
 // Place all the styles related to the Pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import url(http://fonts.googleapis.com/css?family=Sniglet:800);
+
+html { 		
+  background: url(images/pages-background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#hero_title {
+	margin: auto ;
+	margin-left: 15px ;
+	color: rgb(65,148,207) ;
+	font-family: 'Sniglet', cursive;
+}
+
+div#container {
+	height: 0em ;
+}
+
+div.home_1 {
+	height: 0em ;
+	max-width: 60% ;
+	display: inline-block;
+	margin-top: -30px;
+}
+
+div.home_2 {
+	max-width: 40%;
+	color: white ;
+	display: inline-block;
+	border: 2px solid ;
+	border-radius: 15px ;
+	padding: 2em ;
+	box-shadow: 5px 5px 5px white;
+	background-color: none	;
+	margin-left: 330px;
+	margin-top: 20px;
+}
+
+.home_slogan {
+	color: whitesmoke ;
+	width: 20% ;
+	height: 60px ;
+	font-size: 35px ;
+	padding: 10px ;
+	display:inline-block;
+	font-family: 'Sniglet', cursive;
+	position:absolute; TOP:171px; RIGHT:493px;
+	width: 800px;
+	margin-right: -500px;
+}	
+
+.img-dash {
+	height:80px ;
+	width:80px ;
+	border-radius: 100%;
+}
+
+h1.intro_h1 {
+	margin: auto;
+	margin-top: 20px ;
+	margin-left: 504px;
+}
+
+div.intro_vid {
+	margin:auto ;
+	margin-left: 400px;
+	margin-top: 80px ;
+}
+
+#intro_button {
+	margin-top: 30px;
+	margin-left: 573px;
+}
+
+.blog {
+	padding: 18px;
+}
+
+#search {
+	margin-left: 50px ;
+	padding: 5px ; 
+}
+
+h1#headerH1 {
+	color: rgb(65,148,207);
+	font-family: 'Sniglet', cursive;
+	text-shadow: 5px 5px 5px black;
+}
+
+h2#H2search_title {
+	color: whitesmoke ;
+	font-family: 'Sniglet', cursive;
+	text-shadow: 5px 5px 5px black;
+}
+
+div#main {
+	margin:auto ;
+	padding: 10px ;
+	text-align: center;
+	max-widtn: 960px ;
+	background-color :grey ;
+}
+
+div#main img {
+	height:90px ;
+	width: 130px ;
+	border-radius: 5px ;	
+}
+
+#dashboard_button {
+margin-left: 10px ;
+}
+
+#search_image {
+	height: 20px ;
+	width:20px ;
+}
+
+

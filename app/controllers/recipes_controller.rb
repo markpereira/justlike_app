@@ -32,6 +32,9 @@ class RecipesController < ApplicationController
     redirect_to recipes_path
   end
 
+  def trending
+  end  
+
   def search
     @status = "no search"
     search = params[:search]

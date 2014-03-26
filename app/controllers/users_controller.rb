@@ -1,11 +1,13 @@
 class UsersController < ApplicationController
+  protect_from_forgery :except => [:create]
   def index
     @users = User.all
   end
 
   def create
     user = User.create params[:user]
-    redirect_to user
+    session[:user_id] = user.id
+    redirect_to intro_path
   end
 
   def new

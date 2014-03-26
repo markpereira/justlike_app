@@ -1,11 +1,12 @@
-  <h1 id='headerH1'>Search Recipes</h1>
-  <div id="search">
+<h1 id='headerH1'>Trending Recipes</h1>
+
+<div id="search">
     <%= form_tag('/search', :method => 'get') %>
 	   <%= label_tag :search %>
 	   <%= text_field_tag :search %> 
 
     <form method="get" action="/search">
-      <button type="search" class="btn btn-default" id="search_button">Search Recipe Database </button>  
+      <button type="search" class="btn btn-default" id="search_button">Search Trending Recipes</button>  
     </form>   
     <form method="get" action="/dashboard">
       <button type="submit" class="btn btn-default" id="dashboard_button">Go back to Dashboard </button>
