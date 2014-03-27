@@ -15,5 +15,5 @@
 class Ingredient < ActiveRecord::Base
 	attr_accessible :name, :description, :measurement, :cost, :image
 	has_and_belongs_to_many :recipes
-	#validates :name, :uniqueness => true
+	validates :name, :uniqueness => true
 end	

@@ -7,6 +7,7 @@
 			<li id='recipe_image'><%= image_tag(recipe.image) %></li>
 		<ul>
 			<li></strong>Recipe Name : </strong><%= link_to(recipe.name, recipe) %></li>
+			<%= button_to('add to my recipes', add_to_my_recipes_path(recipe.id), :method => 'post', :class => "btn btn-default") %>
 		</ul>
 	</li>
 	<% end %>

@@ -1,32 +1,3 @@
   <h1 id='headerH1'>Search Recipes</h1>
-  <div id="search">
-    <%= form_tag('/search', :method => 'get') %>
-	  <%= text_field_tag :search %> 
-
-    <form method="get" action="/search">
-      <button type="search" class="btn btn-default" id="search_button">Search Recipe Database </button>  
-    </form>   
-    <form method="get" action="/dashboard">
-      <button type="submit" class="btn btn-default" id="dashboard_button">Go back to Dashboard </button>
-    </form>
-  </div>      
-
-  <div id='main'>
-    <% if @search_result %>
-    <% @search_result['matches'].each do |match| %>
-      <img src="<%= match['smallImageUrls'].first %>" />
-      <h2 id='H2search_title'><%= match['recipeName'] %></h2>
-        
-          <form method="get" action="/dashboard">
-            <button type="submit" class="btn btn-default" id="search_button">Add to My recipes</button>
-          </form>
-          <form method="get" action="/dashboard">
-            <button type="submit" class="btn btn-default" id="search_button">View full recipe</button>
-          </form>
-        <hr>
-    <% end %>
-
-</div> 
-<footer id="footer_search">Attributions:<%== @search_result['attribution']['html']%></footer>
-
-    <% end %>
+<%= render "search" %>
+<p> <%= link_to('Want more recipes? Click here', "/search_yummly?search=#{params[:search]}") %></p>

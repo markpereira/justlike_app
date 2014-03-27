@@ -20,7 +20,6 @@ class User < ActiveRecord::Base
 	has_and_belongs_to_many :recipes
 
 	has_secure_password
-  	validates :image, :presence => true
-  	validates :name, :presence => true, :uniqueness => true, :length => { :minimum => 2 }
+  	#validates :name, :uniqueness => true, :length => { :minimum => 2 }
   	validates :email, :presence => true, :uniqueness => true, :length => { :minimum => 2 }
 end	

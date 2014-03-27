@@ -2,14 +2,15 @@
 	<p><%= image_tag @user.image, :class => 'user' %></p>
 
 	<p><strong>Name : </strong><%= @user.name %></p>
-	<p><strong>Address(line 1) : </strong><%= @user.address_1 %></p>
-	<p><strong>Address(line 1) : </strong><%= @user.address_2 %></p>
+	<p><strong>Address ( line 1 ) : </strong><%= @user.address_1 %></p>
+	<p><strong>Address ( line 2 ) : </strong><%= @user.address_2 %></p>
 	<p><strong>City : </strong><%= @user.city %></p>
 	<p><strong>Postcode : </strong><%= @user.postcode %></p>
 	<p><strong>Country : </strong><%= @user.country %></p>
 	<p><strong>Email : </strong><%= @user.email %></p>
 </div>	
  <div class="edit_delete_user">
-	<p><%= link_to 'Update my details', edit_user_path(@user) %> | <%= link_to 'Delete', @user, :method => :delete %></p>
+	<p><%= link_to 'Update my details', edit_user_path(@user) %> | <%= link_to 'Delete', @user, :method => :delete %> </p>
+	<p><%= link_to 'Back to Dashboard', dashboard_path(@user) %></p>
 </div>
 

@@ -14,4 +14,8 @@ class PagesController < ApplicationController
   def dashboard
   end	
 
+  def error404
+    render :status => 404
+  end
+
 end

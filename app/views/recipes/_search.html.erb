@@ -1,0 +1,27 @@
+
+  <div id="search">
+    <%= form_tag('/search', :method => 'get') %>
+	  <%= text_field_tag :search %> 
+
+    <form method="get" action="/search">
+      <button type="search" class="btn btn-default" id="search_button">Search Recipe Database </button>  
+    </form>   
+    <form method="get" action="/dashboard">
+      <button type="submit" class="btn btn-default" id="dashboard_button">Go back to Dashboard </button>
+    </form>
+  </div>      
+
+  <div id='main'>
+    <% if @recipes %>
+    <% @recipes.each do |recipe| %>
+      <img src=<%= recipe.image %> />
+      <h2 id='H2search_title'><%= recipe.name %></h2>
+          
+          <%= button_to('add to my recipes', add_to_my_recipes_path(recipe.id), :method => 'post', :class => "btn btn-default") %>
+
+        <hr>
+    <% end %>
+ 
+</div> 
+
+    <% end %>
