@@ -16,7 +16,7 @@
 #
 
 class Recipe < ActiveRecord::Base
-	attr_accessible :name, :description, :cooktime, :servingsize, :instruction, :image, :user_id, :cuisine_id
+	attr_accessible :name, :description, :cooktime, :servingsize, :instruction, :image, :user_id, :cuisine_id, :yummly_id, :rating
 	belongs_to :cuisine
 	has_and_belongs_to_many :users
 	has_and_belongs_to_many :ingredients
