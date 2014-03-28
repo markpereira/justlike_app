@@ -154,20 +154,24 @@ Things you may want to cover:
 
  8.Relationship tables for API Recipes(Recipes)
    
-   | Yummly API data       | Justlike_app table name| Cool         |
-   | ----------------------|:----------------------:| ------------:|
-   | recipeName            | recipe.name            | :name        |
-   | sourceRecipeUrl       | recipe.instruction     | :instruction |
-   | ingredients           | recipe.ingredients     | :ingredients |
-   | totalTimeInSeconds    | recipe.cooktime        | :cooktime    |
-   | numberOfServings      | recipe.servingsize     | :servingsize |
-   | sourceRecipeUrl       | recipe.instruction     | :instruction |
-   | sourceRecipeUrl       | recipe.instruction     | :instruction |
-   | sourceRecipeUrl       | recipe.instruction     | :instruction |
+   | Yummly API data                | Justlike_app table    | Recipes      |
+   | -------------------------------|:----------------------:| ------------:|
+   | recipeName                     | recipe.name            | :name        |
+   | sourceRecipeUrl                | recipe.instruction     | :instruction |
+   | ingredients                    | recipe.ingredients     | :ingredients |
+   | totalTimeInSeconds             | recipe.cooktime        | :cooktime    |
+   | numberOfServings               | recipe.servingsize     | :servingsize |
+   | attributes{cusine => [asian]}  | recipe.cuisine_id      | :cuisine_id  |
+   | smallImageUrls                 | recipe.image           | :image       |
+   | id                             | recipe.yummly_id       | :yummly_id   |
+   | rating                         | recipe.rating          | :rating      |
 
-
- 
  9.Relationship tables for API Recipes(Ingredients)
+
+   | Yummly API data                | Justlike_app table     | Ingredients  |
+   | -------------------------------|:----------------------:| ------------:|
+   | ingredients                    | ingredient.name        | :name        |
+   |                                | ingredient.image       | :image       |
  
  10.Setting up authentication for users
    Set this up after Joel’s lesson on Monday on authentication
