@@ -143,15 +143,77 @@ Things you may want to cover:
    Save search to local database as a favourite.
    Error checking and validation
 
-6.Initial push to Heroku
+ 6.Initial push to Heroku
 
-7.How the recipe search will work
+ 7.How the recipe search will work
    Setup additional column in the recipe table to have yummly_id
    Setup search to save recipe to database
    Setup link between tables from the search and the current db tables
     link recipe > with recipe and save and edit
     link ingredients > with ingredients and save and edit
 
+ 8.Relationship tables for API Recipes(Recipes)
+ 
+ 9.Relationship tables for API Recipes(Ingredients)
+ 
+ 10.Setting up authentication for users
+   Set this up after Joel’s lesson on Monday on authentication
+   Setup basic authentication with session
+   Test user can login with their password
+   Modify partial to only be used on edit.html.erb
+   Modify new.html.erb to only sign on with email address and password
+   Setup homepage signup 
+   Setup an admin user
+   Test admin user can access user list
+   Test normal user can only access the recipes and ingredients
+   Test normal user can only access their account to update
+   Users able to change password
+   Pass through authentication fail from home > intro > dashboard
+
+ 11.Adding twitter bootstrap 
+   Research and look at adding twitter bootstrap
+   update bootstrap-sass gems and bundle into app
+   Update application.css file
+   Test working
+   Addition of custom javascript by Joel to get dropdowns working on nav
+
+ 12.Heroku setup and push
+   Upload to Heroku
+   Uploaded to Heroku
+   Test 
+   Comment out production server details from database.yml once loaded
+
+ 13.Setup Validation and 404 page
+   Spend time testing validation and error checking
+ 
+ 14.Setup 404 page
+ 
+ 15.Styling
+   Style pages 
+   
+ 16.Organize logos
+   Need to make the home page ‘justlike’ using the same font
+   Customized with twitter bootstrap
+   Intro page video – Powtoons
+   Tidy up all code within the app. Once over.   
+
+ 17.Testing
+   Signup process
+   Login process
+   Logout process
+   Search recipe
+   Search trending recipes
+   Add recipe 
+   Edit recipe
+   Delete recipe 
+   Add user
+   Edit user
+   Delete user
+   Add ingredient
+   Edit ingredient
+   Delete ingredient
+   Add recipe to my favourites
+   Remove recipe from my favourites
 
 * Services (job queues, cache servers, search engines, etc.)
 
