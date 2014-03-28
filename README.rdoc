@@ -154,11 +154,17 @@ Things you may want to cover:
 
  8.Relationship tables for API Recipes(Recipes)
    
-   | Yummly API data  | Justlike_app table name| Cool         |
-   | -----------------|:----------------------:| ------------:|
-   | recipeName       | :recipe.name           | :name        |
-   | col 2 is         | centered               | :instruction |
-   | zebra stripes    | are neat               |    $1 |
+   | Yummly API data       | Justlike_app table name| Cool         |
+   | ----------------------|:----------------------:| ------------:|
+   | recipeName            | recipe.name            | :name        |
+   | sourceRecipeUrl       | recipe.instruction     | :instruction |
+   | ingredients           | recipe.ingredients     | :ingredients |
+   | totalTimeInSeconds    | recipe.cooktime        | :cooktime    |
+   | numberOfServings      | recipe.servingsize     | :servingsize |
+   | sourceRecipeUrl       | recipe.instruction     | :instruction |
+   | sourceRecipeUrl       | recipe.instruction     | :instruction |
+   | sourceRecipeUrl       | recipe.instruction     | :instruction |
+
 
  
  9.Relationship tables for API Recipes(Ingredients)
