@@ -101,7 +101,7 @@ Things you may want to cover:
 
 * Project plan
 
-1.Install and Setup
+ 1.Install and Setup
    Build basic rails app 
    Connect to database
    Setup migration for 4 base tables
@@ -111,7 +111,7 @@ Things you may want to cover:
    Setup routes
    Open website to test rails server can start.
 
-2.Setup CRUD for
+ 2.Setup CRUD for
    Recipes
    Cuisines
    Ingredients
@@ -119,7 +119,7 @@ Things you may want to cover:
    Test all CRUD is working for these with sample data.
    Error checking and validation
 
-3.Test Basic Functionality and website flow
+ 3.Test Basic Functionality and website flow
    Draw up website flow diagram
    Test all basic functionality works
    Setup ‘pages’ route to manage basic pages.
@@ -127,9 +127,9 @@ Things you may want to cover:
    Test all routing works to different pages
    Error checking and validation
 
-4.Initial push to Github
+ 4.Initial push to Github
 
-5.Research API for recipes & how others did it.
+ 5.Research API for recipes & how others did it.
    Yummly – signup to developer site
    Look through requirements and pre-reqs
    Check no issues with local OSX  or Heroku or AWS
