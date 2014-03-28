@@ -154,11 +154,11 @@ Things you may want to cover:
 
  8.Relationship tables for API Recipes(Recipes)
    
-   | Tables        | Are           | Cool  |
-   | ------------- |:-------------:| -----:|
-   | col 3 is      | right-aligned | $1600 |
-   | col 2 is      | centered      |   $12 |
-   | zebra stripes | are neat      |    $1 |
+   | Yummly API data  | Justlike_app table name| Cool         |
+   | -----------------|:----------------------:| ------------:|
+   | recipeName       | :recipe.name           | :name        |
+   | col 2 is         | centered               | :instruction |
+   | zebra stripes    | are neat               |    $1 |
 
  
  9.Relationship tables for API Recipes(Ingredients)
@@ -196,7 +196,19 @@ Things you may want to cover:
  14.Setup 404 page
  
  15.Styling
-   Style pages 
+   Style pages
+   home
+   link to terms and conditions
+   about
+   blog
+   recipes
+   users
+   ingredients
+   search 
+   trending 
+   dashboard 
+   404 page
+   setup terms and conditions page
    
  16.Organize logos
    Need to make the home page ‘justlike’ using the same font
