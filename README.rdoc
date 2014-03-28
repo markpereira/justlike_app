@@ -6,7 +6,27 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+  
+* Gem files
+    - gem 'yummly'
+    - gem 'json'
+    - gem 'httparty'
+    - gem 'bootstrap-sass'
+    - gem 'bcrypt-ruby'
+    - gem 'protected_attributes'
+    - gem 'rails_12factor'
+    - gem 'rails_serve_static_assets'
 
+  #additional debugging gems
+    group :development do
+	  - gem 'pry-rails'
+	  - gem 'pry-debugger'
+	  - gem 'pry-stack_explorer'
+	  - gem 'pry'
+	  - gem 'better_errors'
+	  - gem 'annotate'
+  end
+  
 * System dependencies
 
 * Configuration
