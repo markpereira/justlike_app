@@ -104,53 +104,53 @@ Things you may want to cover:
 1.Install and Setup
    Build basic rails app 
    Connect to database
-Setup migration for 4 base tables
-Setup migration for 3 relational tables
-Test relational tables and base tables for data
-Setup controllers (Recipes, Ingredients, Users, Cuisines)
-Setup routes
-Open website to test rails server can start.
+   Setup migration for 4 base tables
+   Setup migration for 3 relational tables
+   Test relational tables and base tables for data
+   Setup controllers (Recipes, Ingredients, Users, Cuisines)
+   Setup routes
+   Open website to test rails server can start.
 
-Setup CRUD for
-Recipes
-Cuisines
-Ingredients
-Users
-Test all CRUD is working for these with sample data.
-Error checking and validation
+2.Setup CRUD for
+   Recipes
+   Cuisines
+   Ingredients
+   Users
+   Test all CRUD is working for these with sample data.
+   Error checking and validation
 
-Test Basic Functionality and website flow
-Draw up website flow diagram
-Test all basic functionality works
-Setup ‘pages’ route to manage basic pages.
-Setup Home page, FAQ, Blog, About, Login, Intro, Trending
-Test all routing works to different pages
-Error checking and validation
+3.Test Basic Functionality and website flow
+   Draw up website flow diagram
+   Test all basic functionality works
+   Setup ‘pages’ route to manage basic pages.
+   Setup Home page, FAQ, Blog, About, Login, Intro, Trending
+   Test all routing works to different pages
+   Error checking and validation
 
-Initial push to Github
+4.Initial push to Github
 
-Research API for recipes & how others did it.
-Yummly – signup to developer site
-Look through requirements and pre-reqs
-Check no issues with local OSX  or Heroku or AWS
-Find gems, applicable code and setup and test
-Need to Install controllers for the API? (no – added to recipes controller)
-Setup API within the recipes controller
-Test API can produce data
-Setup the results page (views > recipes > search.html.erb)
-Test search function >> producing data
-Clean up search page to show basic recipe and image
-Save search to local database as a favourite.
-Error checking and validation
+5.Research API for recipes & how others did it.
+   Yummly – signup to developer site
+   Look through requirements and pre-reqs
+   Check no issues with local OSX  or Heroku or AWS
+   Find gems, applicable code and setup and test
+   Need to Install controllers for the API? (no – added to recipes controller)
+   Setup API within the recipes controller
+   Test API can produce data
+   Setup the results page (views > recipes > search.html.erb)
+   Test search function >> producing data
+   Clean up search page to show basic recipe and image
+   Save search to local database as a favourite.
+   Error checking and validation
 
-Initial push to Heroku
+6.Initial push to Heroku
 
-How the recipe search will work
-Setup additional column in the recipe table to have yummly_id
-Setup search to save recipe to database
-Setup link between tables from the search and the current db tables
-	link recipe > with recipe and save and edit
-	link ingredients > with ingredients and save and edit
+7.How the recipe search will work
+   Setup additional column in the recipe table to have yummly_id
+   Setup search to save recipe to database
+   Setup link between tables from the search and the current db tables
+    link recipe > with recipe and save and edit
+    link ingredients > with ingredients and save and edit
 
 
 * Services (job queues, cache servers, search engines, etc.)
