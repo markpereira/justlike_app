@@ -101,10 +101,10 @@ Things you may want to cover:
 
 * Project plan
 
-Install and Setup
-	- Build basic rails app 
-	- Connect to database
-	- Setup migration for 4 base tables
+	**Install and Setup
+		- Build basic rails app 
+		- Connect to database
+		- Setup migration for 4 base tables
 
 * Services (job queues, cache servers, search engines, etc.)
 
