@@ -249,7 +249,7 @@ Things you may want to cover:
    Develop presentation for Friday
    Create Readme file in Markdown for documentation
    Tidy up documentation
-   Upload to heroku   
+   Upload to Heroku   
 
 * Services (job queues, cache servers, search engines, etc.)
 
