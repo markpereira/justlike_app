@@ -32,11 +32,11 @@ Things you may want to cover:
 * Database creation
 
 * Database schema
-    <b>create_table "cuisines", force: true do |t|<b>
-    t.string   "name"
-    t.string   "description"
-    t.datetime "created_at"
-    t.datetime "updated_at"
+    create_table "cuisines", force: true do |t|
+        t.string   "name"
+        t.string   "description"
+        t.datetime "created_at"
+        t.datetime "updated_at"
 
     create_table "cuisines_recipes", id: false, force: true do |t|
     t.integer "cuisine_id"
