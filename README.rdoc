@@ -130,7 +130,7 @@ Things you may want to cover:
  4.Initial push to Github [Github](https://github.com/markpereira/justlike_app)
 
  5.Research API for recipes & how others did it.
-   Yummly – signup to developer site
+   Yummly – signup to developer site [Yummly](https://developer.yummly.com/documentation)
    Look through requirements and pre-reqs
    Check no issues with local OSX  or Heroku or AWS
    Find gems, applicable code and setup and test
@@ -153,6 +153,13 @@ Things you may want to cover:
     link ingredients > with ingredients and save and edit
 
  8.Relationship tables for API Recipes(Recipes)
+   
+   | Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
  
  9.Relationship tables for API Recipes(Ingredients)
  
