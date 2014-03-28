@@ -21,5 +21,5 @@ class Recipe < ActiveRecord::Base
 	has_and_belongs_to_many :users
 	has_and_belongs_to_many :ingredients
 	
-	validates :yummly_id, :uniqueness => true
+	validates :yummly_id, :uniqueness => true , :allow_nil => true
 end	
