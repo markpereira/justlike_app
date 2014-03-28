@@ -251,9 +251,6 @@ Things you may want to cover:
    Tidy up documentation
    Upload to Heroku   
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
 
 * ...
 
