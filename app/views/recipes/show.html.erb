@@ -1,17 +1,17 @@
-<p><%= @recipe.name %></p>
-<p><%= link_to('Edit', edit_recipe_path(@recipe)) %> <%= link_to('Delete', @recipe, :method => :delete) %></p>
-<p>Description: <%= @recipe.description %></p>
-<p>Serves: <%= @recipe.servingsize %></p>
-<p><%= @recipe.instruction %></p>
-<p><%= image_tag @recipe.image, :class => 'recipe' %></p>
 
-<% @recipe.ingredients.each do |ingredient| %>
-  <p><%= ingredient.name %></p>
-  <p><%= image_tag ingredient.image, :class => 'ingredient' %></p>
-<% end %>
-
- <div class="edit_delete_recipe">
-<%= link_to 'Edit Recipe', edit_recipe_path(@recipe) %>
-|
-<%= link_to 'Delete Recipe', @recipe, :method => :delete %>
+<div class="media">
+	<h2><%= @recipe.name %></h2>
+	  <p class id ='link'><%= link_to('Edit', edit_recipe_path(@recipe)) %> | <%= link_to('Delete', @recipe, :method => :delete) %> | <%= link_to('Back to All Recipes', recipes_path) %>  </p>
+    <a class="pull-left" href="#">
+      <img class="media-object" src="<%= @recipe.image %>" alt="...">
+    </a>
+  <div class="media-body">
+  	<h5 class="media-heading"><strong>Serves: <%= @recipe.servingsize %></h5>
+    <h5 class="media-heading"><strong>Description: </strong> <%= @recipe.description %></h5>
+    <h5 class="media-heading"><strong>Ingredients: </strong></h5>
+    <% @recipe.ingredients.each do |ingredient| %>
+  	<h6> - <%= ingredient.name %></h6>	
+	<% end %>   
+	  <h5 class="media-heading"><strong>Instructions: </strong> <%= @recipe.instruction %></h5>
+  </div>
 </div>

@@ -12,4 +12,6 @@
 class Cuisine < ActiveRecord::Base
 	attr_accessible :name, :description
 	has_many :recipes
+
+	validates :name, :uniqueness => true
 end	

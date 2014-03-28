@@ -23,3 +23,7 @@
   background-size: cover;
 }
 
+.navbar-brand {
+	font-family: 'Sniglet', cursive;
+	color: rgb(65,148,207) ;
+}

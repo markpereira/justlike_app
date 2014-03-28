@@ -5,6 +5,8 @@ class ApplicationController < ActionController::Base
 
   before_filter :authenticate
 
+  #authenticate user
+
   private
   def authenticate
     if session[:user_id].present?

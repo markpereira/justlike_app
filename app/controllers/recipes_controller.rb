@@ -32,6 +32,8 @@ class RecipesController < ApplicationController
     redirect_to recipes_path
   end 
 
+  #search local database for recipes
+
   def search
     @status = "no search"
     search = params[:search]
@@ -39,6 +41,8 @@ class RecipesController < ApplicationController
       @recipes = Recipe.where('name ilike ?', "%#{ params[:search]}%")
     end 
   end
+
+  #search yummly database for recipes and makes a copy for local search function
   
   def search_yummly
     search = params[:search]
@@ -47,8 +51,7 @@ class RecipesController < ApplicationController
         app_id = "94c36fdb"
         url = "http://api.yummly.com/v1/api/recipes?_app_id=#{app_id}&_app_key=#{app_key}&q=#{search}&maxResult=10&start=10"
         @search_result = HTTParty.get(url)
-        #binding.pry 
-
+        
         if ["Error"] == "Recipe not found!"
           @status = "no results"
         else
@@ -74,11 +77,15 @@ class RecipesController < ApplicationController
       @recipes = recipes.reverse
   end 
 
+  #adding recipes to your dashboard favourites tab
+
   def add_to_my_recipes
     recipe = Recipe.find params[:id]
     @current_user.recipes << recipe
     redirect_to(:back)
   end  
+
+  #remove recipes to your dashboard favourites tab
 
   def delete_from_my_recipes
     recipe = Recipe.find params[:id]
@@ -86,8 +93,9 @@ class RecipesController < ApplicationController
     redirect_to(:back)
   end  
 
+  #runs a local search for a random selection of recipes
+
   def trending
     @recipes = Recipe.order("RANDOM()").limit(5)
   end
-
 end

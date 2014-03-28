@@ -2,6 +2,8 @@ class SessionController < ApplicationController
   def new    
   end
 
+  #create user logon session
+
   def create
     user = User.where(:name => params[:name]).first
     if user.present? && user.authenticate(params[:password])
@@ -13,6 +15,8 @@ class SessionController < ApplicationController
       redirect_to login_path
     end
   end
+
+  # end user logon session
 
   def destroy
     session[:user_id] = nil

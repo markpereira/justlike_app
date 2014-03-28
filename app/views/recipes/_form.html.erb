@@ -20,9 +20,10 @@
 
  <% Ingredient.order(:name).each do |ingredient| %>
   <span><%= ingredient.name %></span>
-  <%= check_box_tag 'recipe[ingredient_ids][]', ingredient.id, ingredient.in?(@recipe.ingredients) %>
+  <%= check_box_tag 'recipe[ingredient_ids][]', ingredient.id, ingredient.in?(@recipe.ingredients), :class => 'input-group-addon' %>
     <% end %>
 
 
   <%= f.submit %>
 <% end %>
+

@@ -1,19 +1,21 @@
 <%= form_for @ingredient do |f| %>
+<div class="form-group">
   <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.text_field :name, class: 'form-control' %>
 
   <%= f.label :description %>
-  <%= f.text_field :description %>
+  <%= f.text_field :description, class: 'form-control' %>
 
   <%= f.label :measurement %>
-  <%= f.text_field :measurement %>
+  <%= f.text_field :measurement, class: 'form-control' %>
 
   <%= f.label :cost %>
-  <%= f.text_field :cost, :step => :any %>
+  <%= f.text_field :cost, :step => :any, class: 'form-control' %>
 
   <%= f.label :image %>
-  <%= f.url_field :image %>
+  <%= f.url_field :image, class: 'form-control' %>
 
   <%= f.submit %>
+</div>
 <% end %>
 

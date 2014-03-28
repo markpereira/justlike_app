@@ -4,6 +4,7 @@
 
 @import url(http://fonts.googleapis.com/css?family=Sniglet:800);
 
+
 html { 		
   background: url(images/pages-background.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
@@ -11,11 +12,10 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
-
+	
 #hero_title {
 	margin: auto ;
 	margin-left: 15px ;
-	color: rgb(65,148,207) ;
 	font-family: 'Sniglet', cursive;
 }
 
@@ -52,6 +52,7 @@ div.home_2 {
 	display:inline-block;
 	font-family: 'Sniglet', cursive;
 	position:absolute; TOP:171px; RIGHT:493px;
+	text-shadow: 5px 5px 10px #575252;
 	width: 800px;
 	margin-right: -514px;
 }	
@@ -66,6 +67,8 @@ h1.intro_h1 {
 	margin: auto;
 	margin-top: 20px ;
 	margin-left: 504px;
+	font-family: 'Sniglet', cursive;
+	color: rgb(65,148,207);
 }
 
 div.intro_vid {
@@ -79,8 +82,9 @@ div.intro_vid {
 	margin-left: 573px;
 }
 
-.blog {
-	padding: 18px;
+div.blog {
+	max-width: 960px ;
+
 }
 
 #search {
@@ -91,14 +95,15 @@ div.intro_vid {
 h1#headerH1 {
 	color: rgb(65,148,207);
 	font-family: 'Sniglet', cursive;
-	text-shadow: 5px 5px 5px black;
+	text-shadow: 5px 5px 5px white;
 	margin-left: 20px ;
 }
 
 h2#H2search_title {
 	color: rgb(65,148,207);
-	font-family: 'Sniglet', cursive;
-	text-shadow: 5px 5px 5px black;
+	font-family: 'Sniglet', cursive ;
+	background-color: white ;
+	border-radius: 10px ;
 }
 
 div#main {
@@ -107,8 +112,8 @@ div#main {
 	text-align: center;
 	max-width: 960px ;
 	width: 70% ;
-	border-radius: 10px ;
-	background-color :#B5A3A3 ;
+	border-radius: 20px ;
+	background-color :#B9B0B0 ;
 }
 
 
@@ -119,9 +124,9 @@ div#main img {
 }
 
 #dashboard_button {
-margin-left: 218px ;
-margin-bottom: 5px ;
-padding-bottom: 5px ;
+	margin-left: 218px ;
+	margin-bottom: 5px ;
+	padding-bottom: 5px ;
 }
 
 #search_image {
@@ -138,4 +143,13 @@ button#search_button.btn.btn-default {
 footer#footer_search {
 	margin:auto ;
 	text-align:center ;
+}
+
+html body#about {
+	text-color: red ;
+}
+
+.media img {
+	margin-left: 10px ;
+	border-radius: 5px ;
 }

@@ -1,15 +1,12 @@
-<h1 id='headerH1'>Recipes Index</h1>
+<h1 id='headerH1'>Recipes Index</h1>   
 
-<div id="recipes_index"
-<ol>
-	<% @recipes.each do |recipe| %>
-	<li>
-			<li id='recipe_image'><%= image_tag(recipe.image) %></li>
-		<ul>
-			<li></strong>Recipe Name : </strong><%= link_to(recipe.name, recipe) %></li>
-			<%= button_to('add to my recipes', add_to_my_recipes_path(recipe.id), :method => 'post', :class => "btn btn-default") %>
-		</ul>
-	</li>
-	<% end %>
-</ol>
-</div>
+  <div id='main'>
+    <% if @recipes %>
+    <% @recipes.each do |recipe| %>
+      <img src=<%= recipe.image %> />
+      <h2 id='H2search_title'><%= link_to(recipe.name, recipe) %></h2>
+          <%= button_to('add to my recipes', add_to_my_recipes_path(recipe.id), :method => 'post', :class => "btn btn-default") %>
+      <hr>
+    <% end %>
+  </div> 
+    <% end %>
