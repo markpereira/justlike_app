@@ -102,8 +102,8 @@ Things you may want to cover:
 * Project plan
 
 1.Install and Setup
-  *Build basic rails app 
-  *Connect to database
+   Build basic rails app 
+   Connect to database
 Setup migration for 4 base tables
 Setup migration for 3 relational tables
 Test relational tables and base tables for data
