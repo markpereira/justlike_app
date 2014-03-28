@@ -26,10 +26,20 @@ Things you may want to cover:
     - gem 'annotate'
   
 * System dependencies
+    
+    postgres 9.3.3.0 (21)
 
-* Configuration
+* Database creation and configuration
+    
+    postgresql
+    
+        production:
+        adapter: postgresql
+        encoding: unicode
+        database: justlike_app_development
+        pool: 5
+        password:
 
-* Database creation
 
 * Database schema
     create_table "cuisines", force: true do |t|
