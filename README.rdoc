@@ -127,7 +127,7 @@ Things you may want to cover:
    Test all routing works to different pages
    Error checking and validation
 
- 4.Initial push to Github
+ 4.Initial push to Github [Github](https://github.com/markpereira/justlike_app)
 
  5.Research API for recipes & how others did it.
    Yummly – signup to developer site
@@ -214,6 +214,13 @@ Things you may want to cover:
    Delete ingredient
    Add recipe to my favourites
    Remove recipe from my favourites
+
+ 18.Administration
+   Update files to github regularly
+   Develop presentation for Friday
+   Create Readme file in Markdown for documentation
+   Tidy up documentation
+   Upload to heroku   
 
 * Services (job queues, cache servers, search engines, etc.)
 
