@@ -27,6 +27,7 @@ Things you may want to cover:
   
 * System dependencies
     
+    Rails 4.0.3
     postgres 9.3.3.0 (21)
 
 * Database creation and configuration
@@ -98,7 +99,164 @@ Things you may want to cover:
         t.string   "password_digest"
 
 
-* How to run the test suite
+* Project plan
+    
+    Install and Setup
+Build basic rails app 
+Connect to database
+Setup migration for 4 base tables
+Setup migration for 3 relational tables
+Test relational tables and base tables for data
+Setup controllers (Recipes, Ingredients, Users, Cuisines)
+Setup routes
+Open website to test rails server can start.
+
+Setup CRUD for
+Recipes
+Cuisines
+Ingredients
+Users
+Test all CRUD is working for these with sample data.
+Error checking and validation
+
+Test Basic Functionality and website flow
+Draw up website flow diagram
+Test all basic functionality works
+Setup ‘pages’ route to manage basic pages.
+Setup Home page, FAQ, Blog, About, Login, Intro, Trending
+Test all routing works to different pages
+Error checking and validation
+
+Initial push to Github
+
+Research API for recipes & how others did it.
+Yummly – signup to developer site
+Look through requirements and pre-reqs
+Check no issues with local OSX  or Heroku or AWS
+Find gems, applicable code and setup and test
+Need to Install controllers for the API? (no – added to recipes controller)
+Setup API within the recipes controller
+Test API can produce data
+Setup the results page (views > recipes > search.html.erb)
+Test search function >> producing data
+Clean up search page to show basic recipe and image
+Save search to local database as a favourite.
+Error checking and validation
+
+Initial push to Heroku
+
+How the recipe search will work
+Setup additional column in the recipe table to have yummly_id
+Setup search to save recipe to database
+Setup link between tables from the search and the current db tables
+•	link recipe > with recipe and save and edit
+•	link ingredients > with ingredients and save and edit
+
+Relationship tables for API:  Recipes > Recipes
+Yummly API data	Justlike_app tables(Recipes)
+recipeName	X	:name	recipe.name
+sourceRecipeUrl		:instruction	recipe.instruction
+ingredients		:ingredients	recipe.ingredients
+totalTimeInSeconds		:cooktime	recipe.cooktime
+numberOfServings	X	:servingsize	recipe.servingsize
+attributes{cuisine=>[asian]}		:cuisine_id	recipe.cuisine_id
+smallImageUrls	X	:image	recipe.image
+id	X	:yummly_id	recipe.yummly_id
+rating	X	:rating	recipe.rating
+
+Relationship tables for API Recipes(Ingredients) > Ingredients
+Yummly API data	Justlike_app tables(Ingredients)
+ingredients		:name	ingredient.name
+		:image	ingredient.image
+
+
+Setting up authentication for users
+Set this up after Joel’s lesson on Monday on authentication
+Setup basic authentication with session
+Test user can login with their password
+Modify partial to only be used on edit.html.erb
+Modify new.html.erb to only sign on with email address and password
+Setup homepage signup 
+Setup an admin user
+Test admin user can access user list
+Test normal user can only access the recipes and ingredients
+Test normal user can only access their account to update
+Users able to change password
+Pass through authentication fail from home > intro > dashboard
+
+Adding twitter bootstrap 
+Research and look at adding twitter bootstrap
+update bootstrap-sass gems and bundle into app
+Update application.css file
+Test working
+Addition of custom javascript by Joel to get dropdowns working on nav
+
+Heroku setup and push
+Upload to Heroku
+Uploaded to Heroku
+Test 
+Comment out production server details from database.yml once loaded
+
+Setup Validation and 404 page
+Spend time testing validation and error checking
+Setup 404 page
+
+Styling
+Style pages 	
+•	home
+o	link to terms and conditions
+•	about
+o	lorem ipsum and style
+•	blog
+o	lorem ipsum and style
+•	recipes
+o	need to style – edit recipes page
+•	users
+o	started styling 
+•	ingredients
+o	need to style – all ingredients page
+•	search (started)
+o	need to finish styling
+•	trending (started)
+o	need to finish styling
+•	dashboard (started)
+o	style my favourites and finish dashboard styling
+•	404 page
+o	basic styling
+•	setup terms and conditions page
+Organize logos
+Need to make the home page ‘justlike’ using the same font
+Customized with twitter bootstrap
+Intro page video – Powtoons
+Tidy up all code within the app. Once over.
+
+Testing
+Signup process
+Login process
+Logout process
+Search recipe
+Search trending recipes
+Add recipe – Not adding to the database to view
+Edit recipe
+Delete recipe (add’s twice doesn’t let you know you already added it)
+•	when delete – it deletes all records of that recipe from favourites
+Add user
+Edit user
+Delete user
+Add ingredient
+Edit ingredient
+Delete ingredient
+Add recipe to my favourites
+Remove recipe from my favourites
+
+
+Administration
+Update files to github regularly
+Create Readme file in Markdown for documentation
+Tidy up documentation
+Develop presentation for Friday
+Upload to heroku
+
 
 * Services (job queues, cache servers, search engines, etc.)
 
