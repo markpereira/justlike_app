@@ -101,23 +101,23 @@ Things you may want to cover:
 
 * Project plan
     
-    Install and Setup
-Build basic rails app 
-Connect to database
-Setup migration for 4 base tables
-Setup migration for 3 relational tables
-Test relational tables and base tables for data
-Setup controllers (Recipes, Ingredients, Users, Cuisines)
-Setup routes
-Open website to test rails server can start.
+    	Install and Setup
+		Build basic rails app 
+		Connect to database
+		Setup migration for 4 base tables
+		Setup migration for 3 relational tables
+		Test relational tables and base tables for data
+		Setup controllers (Recipes, Ingredients, Users, Cuisines, Session)
+		Setup routes
+		Open website to test rails server can start.
 
-Setup CRUD for
-Recipes
-Cuisines
-Ingredients
-Users
-Test all CRUD is working for these with sample data.
-Error checking and validation
+	Setup CRUD for
+		Recipes
+		Cuisines
+		Ingredients
+		Users	
+		Test all CRUD is working for these with sample data.
+		Error checking and validation
 
 Test Basic Functionality and website flow
 Draw up website flow diagram
