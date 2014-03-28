@@ -6,6 +6,7 @@ application up and running.
 Things you may want to cover:
 
 * Ruby version
+    - ruby 2.0.0p353 (2013-11-22 revision 43784) [x86_64-darwin12.5.0]
   
 * Gem files
     - gem 'yummly'
