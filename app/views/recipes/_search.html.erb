@@ -12,12 +12,14 @@
 
   <div id='main'>
     <% if @recipes %>
-    <% @recipes.each do |recipe| %>
-      <img src=<%= recipe.image %> />
-      <h2 id='H2search_title'><%= link_to(recipe.name, recipe) %></h2>     
-        <%= button_to('add to my recipes', add_to_my_recipes_path(recipe.id), :method => 'post', :class => "btn btn-default") %>
+      <% @recipes.each do |recipe| %>
+        <img src=<%= recipe.image %> />
+        <h2 id='H2search_title'><%= link_to(recipe.name, recipe) %></h2>     
+          <%= button_to('add to my recipes', add_to_my_recipes_path(recipe.id), :method => 'post', :class => "btn btn-default") %>
 
-        <hr>
+          <hr>
+      <% end %>
+    <% else %>
+      <h3>No results found</h3>
     <% end %>
   </div> 
-    <% end %>
