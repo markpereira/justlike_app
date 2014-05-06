@@ -40,6 +40,7 @@ gem 'bcrypt-ruby'
 gem 'protected_attributes'
 gem 'rails_12factor'
 gem 'rails_serve_static_assets'
+gem 'newrelic_rpm'
 
 #additional debugging gems
 group :development do
